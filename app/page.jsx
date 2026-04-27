@@ -1,0 +1,67 @@
+import Galaxy from "@/components/Galaxy";
+
+export default function Home() {
+  return (
+    <main className="relative min-h-screen overflow-hidden bg-black text-white">
+      <Galaxy />
+
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(255,158,203,0.13),transparent_28%),radial-gradient(circle_at_78%_28%,rgba(76,111,255,0.15),transparent_32%),linear-gradient(90deg,rgba(0,0,0,0.52)_0%,rgba(0,0,0,0.26)_40%,rgba(0,0,0,0.08)_100%)]" />
+
+      <section className="relative z-10 flex min-h-screen flex-col px-6 py-6 sm:px-8 lg:px-12">
+        <header className="flex items-start justify-between gap-6">
+          <a
+            href="#research"
+            className="pointer-events-auto inline-flex items-center text-[13px] font-medium uppercase tracking-[0.28em] text-white/48 transition-colors duration-300 hover:text-white/78 sm:text-[14px]"
+          >
+            NEW RESEARCH <span className="ml-2 text-white/68">&rarr;</span>
+          </a>
+
+          <a
+            href="#playground"
+            className="pointer-events-auto inline-flex items-center rounded-full border border-white/14 bg-white/[0.04] px-4 py-2 text-sm font-medium text-white/78 backdrop-blur-sm transition-all duration-300 hover:border-white/28 hover:bg-white/[0.08] hover:text-white"
+          >
+            Playground
+          </a>
+        </header>
+
+        <div className="flex flex-1 items-center justify-center">
+          <div className="max-w-5xl py-16 text-center sm:py-20 lg:py-24">
+            <p
+              id="research"
+              className="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/5 px-7 py-3 text-[0.95rem] font-semibold tracking-[-0.03em] text-cyan-100 shadow-[0_0_30px_rgba(34,211,238,0.12)]"
+            >
+              <span className="mr-3 h-2.5 w-2.5 rounded-full bg-cyan-400" />
+              gparticle system online
+            </p>
+
+            <h1 className="mx-auto mt-10 max-w-5xl text-[3.6rem] font-semibold leading-[0.92] tracking-[-0.075em] text-white sm:text-[5.4rem] lg:text-[6.1rem]">
+              Visualizing Intelligence
+              <br />
+              Through Particles.
+            </h1>
+
+            <p className="mx-auto mt-10 max-w-4xl text-[1.12rem] leading-8 text-white/72 sm:text-[1.28rem]">
+              gparticle transforms complex data into interactive 3D particle
+              systems.
+            </p>
+
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="#research"
+                className="pointer-events-auto inline-flex min-w-[272px] items-center justify-center rounded-full bg-white px-10 py-5 text-[1rem] font-semibold text-slate-950 transition-all duration-300 hover:bg-white/90"
+              >
+                Explore Visualization <span className="ml-2">&rarr;</span>
+              </a>
+              <a
+                href="#about"
+                className="pointer-events-auto inline-flex items-center justify-center rounded-full border border-transparent px-4 py-3 text-[1rem] font-semibold text-white/78 transition-colors duration-300 hover:text-white"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
